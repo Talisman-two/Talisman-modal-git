@@ -1,0 +1,45 @@
+body {
+	position: relative;
+}
+* {
+	transition: all 0.2s;
+}
+.container {
+	padding-top: 20%;
+}
+.overlay {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.8);
+	display: none;
+}
+.popup {
+	position: fixed;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	top: 50%;
+	transform: translate(-1110%,200%);
+	padding: 20px;
+	background-color: #fcfcfc;
+}
+.popup_active {
+	transform: translate(-50%, -50%);
+}
+.close-btn {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	font-size: 2rem;
+}
+.close-btn:hover {
+	cursor: pointer;
+}
+.form-control:focus {
+	box-shadow: none;
+}
